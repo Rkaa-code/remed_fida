@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>E-Katalog Mebel</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50">
+
+  <header class="bg-amber-900 text-white p-5 shadow-lg">
+    <h1 class="text-3xl font-bold">
+      E-Katalog Mebel Nusantara
+    </h1>
+  </header>
+
+  <div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-amber-800 text-white p-4">
+
+      <h2 class="font-bold text-xl mb-4">
+        Kategori
+      </h2>
+
+      <div class="space-y-2">
+
+        <button
+            class="kategori-btn w-full bg-amber-900 text-white p-2 rounded transition-all duration-300"
+            data-kategori="Semua">
+            Semua
+        </button>
+
+        <button
+            class="kategori-btn w-full bg-amber-600 p-2 rounded transition-all duration-300"
+            data-kategori="Ruang Tamu">
+            Ruang Tamu
+        </button>
+
+        <button
+            class="kategori-btn w-full bg-amber-600 p-2 rounded transition-all duration-300"
+            data-kategori="Kamar Tidur">
+            Kamar Tidur
+        </button>
+
+        <button
+            class="kategori-btn w-full bg-amber-600 p-2 rounded transition-all duration-300"
+            data-kategori="Dapur & Ruang Makan">
+            Dapur & Ruang Makan
+        </button>
+
+        <button
+            class="kategori-btn w-full bg-amber-600 p-2 rounded transition-all duration-300"
+            data-kategori="Ruang Kerja">
+            Ruang Kerja
+        </button>
+
+        <button
+            class="kategori-btn w-full bg-amber-600 p-2 rounded transition-all duration-300"
+            data-kategori="Outdoor">
+            Area Outdoor/Taman
+        </button>
+
+        </div>
+    </aside>
+
+    <!-- Konten -->
+    <main class="flex-1 p-6">
+
+      <input
+        type="text"
+        id="search"
+        placeholder="Cari nama furnitur atau bahan kayu..."
+        class="w-full border p-3 rounded-lg mb-6"
+      >
+
+      <div
+        id="produk-container"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="mebel-data.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
